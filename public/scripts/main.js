@@ -7,7 +7,6 @@
 			intervalId;
 		
 		return function() {
-			console.log('chilling resize');
 			if (waiting) return;
 
 			waiting = true;
@@ -40,7 +39,6 @@
 			chilledValidate;
 
 		function resize() {
-			console.log('resize');
 			var width = bodyEl.width(),
 				editorWidth = width / 2;
 
@@ -110,8 +108,10 @@
 			showErrors(report.errors.map(function(error) {
 				var path = schemaUriPathExp.exec(error.schemaUri)[1];
 
-				return error.message + path ? ' (' + path + ')' : '';
+				return error.message + (path ? ' (' + path + ')' : '');
 			}));
+
+			console.log(report);
 		}
 
 		schemaEditor = createJsonEditor(schemaEl);
