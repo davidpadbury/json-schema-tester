@@ -1,0 +1,17 @@
+{
+  "author": "David Padbury <david@davidpadbury.com> (http://davidpadbury.com)",
+  "name": "json-schema-tester",
+  "description": "Little web ui for testing json-schema files against data",
+  "version": "0.0.1",
+  "repository": {
+    "url": ""
+  },
+  "main": "app.js",
+  "engines": {
+    "node": "~0.6.5"
+  },
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "devDependencies": {}
+}

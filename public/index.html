@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<title>json-schema testbed</title>
+	<head>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			#schema, #data {
+				position: absolute;
+				top: 0; bottom: 125px;
+			}
+
+			#schema {
+				left: 0;
+			}
+
+			#data {
+				right: 0;
+			}
+
+			#errors {
+				position: absolute;
+				left: 0; right: 0; bottom: 0;
+				height: 125px;
+			}
+
+			#errors.pass {
+				background-color: green;
+			}
+
+			#errors.fail {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="schema"></div>
+		<div id="data"></div>
+		<div id="errors"></div>
+		
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/uri.js"></script>
+		<script src="scripts/jsv.js"></script>
+		<script src="scripts/json-schema-draft-03.js"></script>
+		<script src="scripts/ace/ace.js"></script>
+		<script src="scripts/ace/theme-vibrant_ink.js"></script>
+		<script src="scripts/ace/mode-json.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
